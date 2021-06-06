@@ -1,0 +1,361 @@
+ /* --space hight-- */
+.gap-1{
+    height: 1vw;
+}
+.gap-2{
+    height: 2vw;
+}
+.gap-3{
+    height: 3vw;
+}
+.gap-4{
+    height: 4vw;
+}
+.gap-5{
+    height: 5vw;
+}
+
+
+/* space land */
+.gap-l-1{
+    width: 10%;
+}
+.gap-l-2{
+    width: 20%;
+}
+.gap-l-3{
+    width: 30%;
+}
+.gap-l-4{
+    width: 40%;
+}
+.gap-l-5{
+    width: 50%;
+}
+
+
+/* --tap color-- */
+.tapcolorpink{
+    background-color: rgb(239, 32, 123);
+    width: 100%;
+    height: 2.5em;
+}
+.text-in-tap-pink{
+  font-size: 1.5em;
+}
+
+.textgray{
+    font-size: 2em;
+}
+
+
+/* --txt z0 z1-- */
+.parent {
+    position: relative;
+    margin-left: 12em;
+  }
+
+  .child {
+    position: absolute;
+  }
+  .child1 {
+    font-family:Prompt-N5;
+    color: rgb(255, 136, 158);
+    font-weight: 400;
+    font-size: 7em;
+    z-index: 1;
+    
+  }
+  .child2 {
+    font-family: Prompt-N9;
+    color: rgb(255, 206, 215);
+    font-weight: 100;
+    font-size: 10em;
+    z-index: 0;
+  }
+
+/*PEN STYLES*/
+* {
+    box-sizing: border-box;
+  }
+  .blog-card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.6%;
+    background: #fff;
+    line-height: 1.4;
+    font-family: sans-serif;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 0;
+   
+    max-width: 80%;
+  }
+  .blog-card a {
+    color: inherit;
+  }
+  .blog-card .meta {
+    position: relative;
+    z-index: 0;
+    height: 200px;
+  }
+  .blog-card .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s;
+  
+  }
+  .blog-card .description {
+    padding: 1vw;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  .blog-card .description h1,
+  .blog-card .description h2 {
+    font-family: Prompt-N5;
+    color: rgb(255, 136, 158);
+  }
+  .blog-card .description h1 {
+    line-height: 1;
+    margin: 0;
+  }
+  .blog-card .description h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #a2a2a2;
+    margin-top: 5px;
+  }
+  .blog-card p {
+    position: relative;
+    margin: 1rem 0 0;
+    font-size: 1em;
+    font-family: Prompt-N2;
+  }
+  .blog-card p:first-of-type {
+    margin-top: 1.25rem;
+  }
+  .blog-card p:first-of-type:before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background: #5ad67d;
+    width: 35px;
+    top: -0.75rem;
+    border-radius: 3px;
+  }
+  
+  @media (min-width: 300px) {
+   
+    .blog-card {
+      flex-direction: row;
+      max-width: 80%;
+    }
+    .blog-card .meta {
+      flex-basis: 40%;
+      height: auto;
+    }
+    .blog-card .description {
+      flex-basis: 150%;
+      font-size: 1em;
+    }
+    .blog-card .description:before {
+      transform: skewX(-3deg);
+      content: "";
+      background: #fff;
+      width: 30px;
+      position: absolute;
+      left: -10px;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+    .blog-card.alt {
+      flex-direction: row-reverse;
+    }
+    .blog-card.alt .description:before {
+      left: inherit;
+      right: -10px;
+      transform: skew(3deg);
+    }
+    .blog-card.alt .details {
+      padding-left: 25px;
+    }
+  
+ 
+    
+    
+  }
+  @media (max-width: 1920px) {
+    .blog-card .description h1 {
+      line-height: 1;
+      margin: 0;
+      font-size: 7em;
+    }
+
+  .blog-card p {
+    position: relative;
+    margin: 1rem 0 0;
+    font-size: 0.7em;
+    font-family:Prompt-N2;
+  }
+}
+
+  @media (max-width: 415px) {
+    .textgray{
+      font-size: 0.77em;
+    }
+    .tapcolorpink{
+      display: block;
+      background-color: rgb(239, 32, 123);
+      width: auto;
+      height: 1em;
+  }
+  .text-in-tap-pink{
+    font-size: 0.5em;
+  }
+  .textgray img{
+    width: 40%;
+  }
+  .parent {
+    position: relative;
+    margin-left: 2em;
+  }
+  .child {
+    position: absolute;
+  }
+  .child1 {
+    font-family:Prompt-N5;
+    color: rgb(255, 136, 158);
+    font-weight: 400;
+    font-size: 2em;
+    z-index: 1;
+  }
+  .child2 {
+    font-family: Prompt-N9;
+    color: rgb(255, 206, 215);
+    font-weight: 100;
+    font-size: 3em;
+    z-index: 0;
+  } .blog-card .description h1 {
+    line-height: 1;
+    margin: 0;
+    font-size: 1.2em;
+  }
+  .blog-card p {
+    position: relative;
+    margin: 1rem 0 0;
+    font-size: 0.7em;
+    font-family:Prompt-N2;
+  }
+  .blog-card .meta {
+    flex-basis: 100%;
+    height: auto;
+  }
+}
+  @media (max-width: 375px) {
+    .textgray{
+      font-size: 0.75em;
+    }
+    .tapcolorpink{
+      display: block;
+      background-color: rgb(239, 32, 123);
+      width: auto;
+      height: 1em;
+  }
+  .text-in-tap-pink{
+    font-size: 0.5em;
+  }
+  .textgray img{
+    width: 40%;
+  }
+  .parent {
+    position: relative;
+    margin-left: 2em;
+  }
+  .child {
+    position: absolute;
+  }
+  .child1 {
+    font-family:Prompt-N5;
+    color: rgb(255, 136, 158);
+    font-weight: 400;
+    font-size: 2em;
+    z-index: 1;
+  }
+  .child2 {
+    font-family: Prompt-N9;
+    color: rgb(255, 206, 215);
+    font-weight: 100;
+    font-size: 3em;
+    z-index: 0;
+  } .blog-card .description h1 {
+    line-height: 1;
+    margin: 0;
+    font-size: 1em;
+  }
+  .blog-card p {
+    position: relative;
+    margin: 1rem 0 0;
+    font-size: 0.4em;
+    font-family:Prompt-N2;
+  }
+}
+  @media (max-width: 320px) {
+    .textgray{
+      font-size: 0.6em;
+    }
+    .tapcolorpink{
+      display: block;
+      background-color: rgb(239, 32, 123);
+      width: auto;
+      height: 1em;
+  }
+  .text-in-tap-pink{
+    font-size: 0.5em;
+  }
+  .textgray img{
+    width: 40%;
+  }
+  .parent {
+    position: relative;
+    margin-left: 2em;
+  }
+  .child {
+    position: absolute;
+  }
+  .child1 {
+    font-family:Prompt-N5;
+    color: rgb(255, 136, 158);
+    font-weight: 400;
+    font-size: 1em;
+    z-index: 1;
+  }
+  .child2 {
+    font-family: Prompt-N9;
+    color: rgb(255, 206, 215);
+    font-weight: 100;
+    font-size: 2em;
+    z-index: 0;
+  }
+  .blog-card .description h1 {
+    line-height: 1;
+    margin: 0;
+    font-size: 1em;
+  }
+  .blog-card p {
+    position: relative;
+    margin: 1rem 0 0;
+    font-size: 0.3em;
+    font-family:Prompt-N2;
+  }
+  
+}
